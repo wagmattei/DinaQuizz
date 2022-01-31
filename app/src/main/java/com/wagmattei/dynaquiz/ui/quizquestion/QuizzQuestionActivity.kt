@@ -1,8 +1,8 @@
-package com.wagmattei.dinaquizz.ui.quizquestion
+package com.wagmattei.dynaquiz.ui.quizquestion
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.wagmattei.dinaquizz.R
+import com.wagmattei.dynaquiz.R
 
 class QuizzQuestionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

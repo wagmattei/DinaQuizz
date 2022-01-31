@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DynaQuizz</string>
+    <string name="app_name">DynaQuiz</string>
     <string name="loginTitle">DynaQuiz</string>
     <string name="login_wellcome">Bem Vindo!</string>
     <string name="login_ask_name">Digite seu nome ou apelido</string>

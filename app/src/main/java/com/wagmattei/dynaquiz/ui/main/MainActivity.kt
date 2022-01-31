@@ -1,11 +1,11 @@
-package com.wagmattei.dinaquizz.ui.main
+package com.wagmattei.dynaquiz.ui.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.wagmattei.dinaquizz.R
-import com.wagmattei.dinaquizz.ui.quizquestion.QuizzQuestionActivity
+import com.wagmattei.dynaquiz.R
+import com.wagmattei.dynaquiz.ui.quizquestion.QuizzQuestionActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.wagmattei.dinaquizz
+package com.wagmattei.dynaquiz
 
 import org.junit.Test
 
