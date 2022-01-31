@@ -1,0 +1,12 @@
+package com.wagmattei.dinaquizz.ui.quizquestion
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import com.wagmattei.dinaquizz.R
+
+class QuizzQuestionActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_quizz_question)
+    }
+}

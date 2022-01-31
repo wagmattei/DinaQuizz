@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">DinaQuizz</string>
-    <string name="loginTitle">DinaQuiz</string>
+    <string name="app_name">DynaQuizz</string>
+    <string name="loginTitle">DynaQuiz</string>
     <string name="login_wellcome">Bem Vindo!</string>
     <string name="login_ask_name">Digite seu nome ou apelido</string>
     <string name="login_start">Começar</string>
+    <string name="quizzQuestion_send_answer">Enviar Resposta</string>
+    <string name="quizQuestion_info_answer">Selecione uma das resposta abaixo</string>
 </resources>
