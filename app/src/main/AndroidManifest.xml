@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DynaQuiz">
         <activity
+            android:name=".ui.quizresult.QuizResultActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.quizquestion.QuizzQuestionActivity"
             android:exported="false" />
         <activity

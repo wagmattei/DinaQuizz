@@ -6,4 +6,6 @@
     <string name="login_start">Começar</string>
     <string name="quizzQuestion_send_answer">Enviar Resposta</string>
     <string name="quizQuestion_info_answer">Selecione uma das resposta abaixo</string>
+    <string name="results_title">Avaliação</string>
+    <string name="result_thanks">Obrigado por responder o DynaQuiz</string>
 </resources>
