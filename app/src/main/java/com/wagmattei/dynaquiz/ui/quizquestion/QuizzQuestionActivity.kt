@@ -23,7 +23,6 @@ class QuizzQuestionActivity : AppCompatActivity() {
             showDialogAlert(R.layout.dialog_incorrect)
         }
 
-
     }
 
     private fun showDialogAlert(layout: Int) {
