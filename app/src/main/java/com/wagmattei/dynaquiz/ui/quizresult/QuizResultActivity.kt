@@ -34,6 +34,9 @@ class QuizResultActivity : AppCompatActivity() {
             adapter.setData(user)
         })
 
+        btn_finish.setOnClickListener{
+            finish()
+        }
 
     }
 
