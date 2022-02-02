@@ -8,4 +8,6 @@
     <string name="quizQuestion_info_answer">Selecione uma das resposta abaixo</string>
     <string name="results_title">Avaliação</string>
     <string name="result_thanks">Obrigado por responder o DynaQuiz</string>
+    <string name="alert_info_your_name_please">Preencha seu nome ou apelido, por favor.</string>
+    <string name="hint_name">Nome ou Apelido</string>
 </resources>

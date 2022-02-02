@@ -147,17 +147,12 @@ class QuizzQuestionActivity : AppCompatActivity() {
     }
 
     fun clearOption() {
-        quizzOption1.isChecked = false
-        quizzOption2.isChecked = false
-        quizzOption3.isChecked = false
-        quizzOption4.isChecked = false
-        quizzOption5.isChecked = false
+        quizzGroup.clearCheck()
     }
 
     override fun onStart() {
         super.onStart()
 
-        // Nome do usuário - todo enviar para a viewmodel
         userName = intent.getStringExtra(USER_NAME).toString()
 
     }

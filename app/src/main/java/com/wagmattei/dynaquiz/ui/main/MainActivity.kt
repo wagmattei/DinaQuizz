@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         // Only for teste, replace it
         btn_start.setOnClickListener{
             if(!validate()) {
-                Toast.makeText(this@MainActivity, "Preencha seu nome ou apelido, por favor.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, getString(R.string.alert_info_your_name_please), Toast.LENGTH_SHORT).show()
             } else  {
                 val i = Intent(this, QuizzQuestionActivity::class.java)
                 i.putExtra(USER_NAME, et_name.text.toString())

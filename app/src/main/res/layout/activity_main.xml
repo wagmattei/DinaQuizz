@@ -62,7 +62,7 @@
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
+                    android:hint="@string/hint_name"
                     android:textColor="#363A43"
                     android:textColorHint="#7A8089" />
             </com.google.android.material.textfield.TextInputLayout>
