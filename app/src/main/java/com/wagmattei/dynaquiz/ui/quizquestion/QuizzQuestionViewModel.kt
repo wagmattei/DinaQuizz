@@ -12,6 +12,8 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+// todo descobrir a melhor forma de acessar o arquivo de recursos, se é mandando o contexto no construtor ou no metodo
+
 class QuizzQuestionViewModel (private val repository: Repository) : ViewModel() {
     val myQuestion: MutableLiveData<Response<Question>> = MutableLiveData()
     val myResult: MutableLiveData<Response<AnswerResult>> = MutableLiveData()
@@ -22,7 +24,6 @@ class QuizzQuestionViewModel (private val repository: Repository) : ViewModel() 
 
     fun getQuestion() {
 
-        Log.i("Wagner", "getQuestion")
         val request = repository.getQuestion()
         request.enqueue(object : Callback<Question> {
             override fun onResponse(call: Call<Question>, response: Response<Question>) {

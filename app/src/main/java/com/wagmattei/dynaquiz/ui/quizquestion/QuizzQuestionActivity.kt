@@ -40,7 +40,7 @@ class QuizzQuestionActivity : AppCompatActivity() {
         // Observando Pergunta
         viewModel.myQuestion.observe(this, { response ->
             loading.isDismiss()
-            Log.i("Wagner", "observe")
+
             if (response.isSuccessful) {
                 response.body()?.let {
                     txt_question.text = response.body()?.statement.toString()
@@ -51,7 +51,7 @@ class QuizzQuestionActivity : AppCompatActivity() {
                     quizzOption5.text = response.body()?.options?.get(4).toString()
                 }
             } else {
-                Toast.makeText(this, "Não rolou pergunta", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.alert_could_not_load_question), Toast.LENGTH_SHORT).show()
             }
         })
 
@@ -109,15 +109,15 @@ class QuizzQuestionActivity : AppCompatActivity() {
         viewModel.myErrorQuestion.observe(this , { errorQuestion ->
             loading.isDismiss()
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Ops...")
+            builder.setTitle(getString(R.string.oops))
             builder.setMessage(errorQuestion.toString())
-            builder.setPositiveButton("Tentar Novamente" ) { dialog, which ->
+            builder.setPositiveButton(getString(R.string.try_again) ) { dialog, which ->
                 dialog.dismiss()
                 loading.startLoading()
                 clearOption()
                 viewModel.getQuestion()
             }
-            builder.setNegativeButton("Sair" ) { dialog, which ->
+            builder.setNegativeButton(getString(R.string.exit) ) { dialog, which ->
                 dialog.dismiss()
                 finish()
             }
@@ -129,14 +129,14 @@ class QuizzQuestionActivity : AppCompatActivity() {
         viewModel.myErrorAnswer.observe(this , { errorQuestion ->
             loading.isDismiss()
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Ops...")
+            builder.setTitle(getString(R.string.oops))
             builder.setMessage(errorQuestion.toString())
-            builder.setPositiveButton("Tentar Novamente" ) { dialog, which ->
+            builder.setPositiveButton(getString(R.string.try_again) ) { dialog, which ->
                 dialog.dismiss()
                 loading.startLoading()
                 viewModel.getAnswer(viewModel.myQuestion.value?.body()?.id!!, Answer(myAnswer))
             }
-            builder.setNegativeButton("Sair" ) { dialog, which ->
+            builder.setNegativeButton(getString(R.string.exit) ) { dialog, which ->
                 dialog.dismiss()
                 finish()
             }

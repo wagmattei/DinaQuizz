@@ -10,4 +10,8 @@
     <string name="result_thanks">Obrigado por responder o DynaQuiz</string>
     <string name="alert_info_your_name_please">Preencha seu nome ou apelido, por favor.</string>
     <string name="hint_name">Nome ou Apelido</string>
+    <string name="alert_could_not_load_question">Não foi possível carregar a pergunta.</string>
+    <string name="oops">Oops...</string>
+    <string name="try_again">Tentar Novamente</string>
+    <string name="exit">Sair</string>
 </resources>
