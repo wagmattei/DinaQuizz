@@ -44,6 +44,7 @@
 
 
                 <TextView
+                    android:id="@+id/txt_question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -69,7 +70,7 @@
 
                     <!-- Pesquisar com tornar isso um estilo -->
                     <RadioButton
-                        android:id="@+id/radioButton"
+                        android:id="@+id/quizzOption1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="RadioButton"
@@ -83,7 +84,7 @@
                         />
 
                     <RadioButton
-                        android:id="@+id/radioButton2"
+                        android:id="@+id/quizzOption2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="RadioButton"
@@ -96,7 +97,7 @@
                         />
 
                     <RadioButton
-                        android:id="@+id/radioButton3"
+                        android:id="@+id/quizzOption3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="RadioButton"
@@ -109,7 +110,7 @@
                         />
 
                     <RadioButton
-                        android:id="@+id/radioButton4"
+                        android:id="@+id/quizzOption4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="RadioButton"
@@ -122,7 +123,7 @@
                         />
 
                     <RadioButton
-                        android:id="@+id/radioButton5"
+                        android:id="@+id/quizzOption5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="RadioButton"
