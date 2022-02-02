@@ -39,16 +39,17 @@ class QuizResultActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        // Nome do usuário - todo enviar para a viewmodel
+
         val userName = intent.getStringExtra(Constants.USER_NAME).toString()
         val answerCount = intent.getIntExtra(Constants.ANSWER_COUNT, 0)
 
         tv_loginName.text = userName
-        tv_score.text = "Sua pontuação é ${answerCount.toString()} de 10"
+        tv_score.text = getString(R.string.hits_status,answerCount.toString())
+            // "Sua pontuação é de 10"
+        // ${answerCount.toString()}
 
         val user = User(0, userName, answerCount)
         mUserViewModel.addUser(user)
-        Toast.makeText(this@QuizResultActivity, "Sucesso", Toast.LENGTH_SHORT).show()
     }
 
 }

@@ -14,4 +14,13 @@
     <string name="oops">Oops...</string>
     <string name="try_again">Tentar Novamente</string>
     <string name="exit">Sair</string>
+    <string name="hits_status">Sua pontuação é %1$s de 10</string>
+    <string name="loading">Carregando...</string>
+    <string name="correct_title">Acertou!</string>
+    <string name="correct_subtitle">Sua resposta está correta.</string>
+    <string name="continuos">Continuar</string>
+    <string name="incorrect_title">Errou!</string>
+    <string name="incorrect_subtitle">Que pena, você errou essa.</string>
+    <string name="last_quizz_users">Últimos Quiz</string>
+    <string name="end_game">Fim do Jogo</string>
 </resources>

@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
-            android:text="Nome do Usuário"
+            tools:text="Nome do Usuário"
             android:textColor="@color/white"
             android:textSize="24sp" />
 
@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Sua pontuação é 9 / 10"
+            tools:text="Sua pontuação é 9 / 10"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:padding="12dp"
-            android:text="Novo Quizz"
+            android:text="@string/end_game"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
@@ -78,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Últimos Quiz"
+            android:text="@string/last_quizz_users"
             android:textColor="@color/white"
             android:textSize="24sp" />
         <androidx.recyclerview.widget.RecyclerView
