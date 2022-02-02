@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ScrollView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
@@ -82,6 +83,7 @@ class QuizzQuestionActivity : AppCompatActivity() {
 
 
         btn_sendAnswer.setOnClickListener {
+            sv_quizzquestion.fullScroll(ScrollView.FOCUS_UP);
              myAnswer =
                 when {
                     quizzOption1.isChecked -> {
@@ -101,6 +103,7 @@ class QuizzQuestionActivity : AppCompatActivity() {
                     }
                     else -> ""
                 }
+
             loading.startLoading()
             viewModel.getAnswer(viewModel.myQuestion.value?.body()?.id!!, Answer(myAnswer))
 
