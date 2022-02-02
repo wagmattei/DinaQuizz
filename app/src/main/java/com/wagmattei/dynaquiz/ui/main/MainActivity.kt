@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Toast
 import com.wagmattei.dynaquiz.R
 import com.wagmattei.dynaquiz.ui.quizquestion.QuizzQuestionActivity
+import com.wagmattei.dynaquiz.util.Constants.Companion.USER_NAME
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "Preencha seu nome ou apelido, por favor.", Toast.LENGTH_SHORT).show()
             } else  {
                 val i = Intent(this, QuizzQuestionActivity::class.java)
-                i.putExtra("userName", et_name.text.toString())
+                i.putExtra(USER_NAME, et_name.text.toString())
                 startActivity(i)
             }
         }

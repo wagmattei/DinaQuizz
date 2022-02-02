@@ -3,6 +3,7 @@ package com.wagmattei.dynaquiz.ui.quizquestion
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.wagmattei.dynaquiz.model.Answer
 import com.wagmattei.dynaquiz.model.AnswerResult
 import com.wagmattei.dynaquiz.model.Question
@@ -17,9 +18,10 @@ class QuizzQuestionViewModel (private val repository: Repository) : ViewModel() 
     val myErrorAnswer: MutableLiveData<String> = MutableLiveData()
     val myErrorQuestion: MutableLiveData<String> = MutableLiveData()
     val myQuestionCount : MutableLiveData<Int> = MutableLiveData(0)
-    val myAnswerCount: MutableLiveData<Int> = MutableLiveData(0)
+    val myHits: MutableLiveData<Int> = MutableLiveData(0)
 
     fun getQuestion() {
+
         Log.i("Wagner", "getQuestion")
         val request = repository.getQuestion()
         request.enqueue(object : Callback<Question> {
@@ -48,12 +50,12 @@ class QuizzQuestionViewModel (private val repository: Repository) : ViewModel() 
                 if(response.isSuccessful) {
                     myResult.postValue(response)
                     if(response.body()?.result == "true") {
-                        myAnswerCount.value = myAnswerCount.value?.inc()
-                        val answerCount = myAnswerCount.value
+                        myHits.value = myHits.value?.inc()
+                        val answerCount = myHits.value
                         Log.i("Nova Resposta:", "Acertos $answerCount")
-                    } else {
-                        myErrorAnswer.postValue("Não foi possível obter a resposta.\n"+response.code())
                     }
+                } else {
+                    myErrorAnswer.postValue("Não foi possível obter a resposta.\n"+response.code())
                 }
             }
 
